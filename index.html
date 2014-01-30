@@ -60,9 +60,12 @@
 
 <p class="sectionTitles"><h2>Block Diagrams</h2></p>
 
-<p><img src="blockDiagram.png" alt="" width="1000" /></p>
-<p>The WAP11 has an FCC ID of O7JGL2411AP. Searching the <a href="http://transition.fcc.gov/oet/ea/fccid/">authorized equipment database</a> provided by the FCC's Office of Engineering and Technology, we were able to find full documentation of the router. This block diagram was one of the included documents.</p>
+<p><img src="simpleBlockDiagram.png" alt="" width="1000" /></p>
+<p>This block diagram is meant to be read left-to-right to describe how the Linksys router broadcasts Ethernet signal, in the form of wireless RF coming out of the Tx antenna. It is also meant to be read right-to-left to describe how the router receives packets through its Rx antenna, and converts this signal back into Ethernet.</p>
 
+<p>The WAP11 has an FCC ID of O7JGL2411AP. Searching the <a href="http://transition.fcc.gov/oet/ea/fccid/">authorized equipment database</a> provided by the FCC's Office of Engineering and Technology, we were able to find full documentation of the router. This block diagram was drawn using the FCC's block diagram as a reference. We also referenced the tracing between components on the board.</p>
+
+<p><img src="blockDiagram.png" alt="" width="1000" /></p>
 <p>The FCC issued block diagram describes the general architecture of the WAP11 router, and suggests specific ICs to be used in the blocks. The board we took out of our router follows the architecture, but in some cases uses different ICs. Specifically, the following substitutions were made. An RF3000 baseband modem was used in placed of a HFA3861A baseband modem. An S0374B1 intermediate frequency converter was used in place of the HFA3683A frequency converter. Finally, it is uncertain but probable that the RF/IF converter was substituted, but we cannot confirm this since the printing on the other chips in the RF-shielded compartment were illegible.
 
 <p><h2>User Manual: </h2></p>
